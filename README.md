@@ -20,7 +20,7 @@ A command-line interface (CLI) tool for managing actions on our static web appli
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/web-service-cli.git
+   git clone https://github.com/MichaelAuditore/web-server-cli.git
    cd web-service-cli
    ```
 2. Install dependencies:
@@ -28,7 +28,37 @@ A command-line interface (CLI) tool for managing actions on our static web appli
     npm install
     ```
 
-### Usage
-```bash
-node ./bin/cmd.js
-```
+## Usage
+
+First at all, we need to link our package to our [web static app](https://github.com/MichaelAuditore/static-web-app.git).
+
+Note: It is important to run our fastify server, to succesfully execute commands of our cli tool
+
+So:
+
+1. Link package to our local project
+ * Run this command on this repo that allows you to symlink a local package into your global node_modules directory and use it in other local projects without publishing it to the npm registry.
+    
+    ```bash
+    npm link
+    ```
+* Now we are going to execute this command to use our package into the [web static app](https://github.com/MichaelAuditore/static-web-app.git) local project.
+
+    ```
+    npm link server-cli
+    ```
+
+### Instructions
+Usage: server-cli [options] [command]
+
+Back office for websocket app
+
+Options:
+  -V, --version                                            output the version number
+  -i, --interactive                                        Run App in interactive mode
+  -h, --help                                               display help for command
+
+Commands:
+  add [options] <CATEGORY> <ID> <NAME> <AMOUNT> [INFO...]  Agregar producto por ID a una categoría
+  list [options] [CATEGORY]                                List categories
+  update [options] <ID> <Amount>                           Update an order
