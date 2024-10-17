@@ -30,7 +30,7 @@ A command-line interface (CLI) tool for managing actions on our static web appli
 
 ## Usage
 
-First at all, we need to link our package to our [web static app](https://github.com/MichaelAuditore/static-web-app.git).
+First at all, we need to link our package to our [web static app](https://github.com/MichaelAuditore/static-web-app.git) or [web server app](https://github.com/MichaelAuditore/web-server-app) which now includes WebSockets support, each time an order is created automatically on real time execution a change is made by our static app.
 
 Note: It is important to run our fastify server, to succesfully execute commands of our cli tool
 
