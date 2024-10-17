@@ -29,5 +29,6 @@ A command-line interface (CLI) tool for managing actions on our static web appli
     ```
 
 ### Usage
-
+```bash
 node ./bin/cmd.js
+```
